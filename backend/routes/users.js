@@ -29,6 +29,7 @@ router.post("/", async (req, res) => {
     name: req.body.name,
     email: req.body.email,
     passwordHash: bcrypt.hashSync(req.body.password, 10),
+    // passwordHash: req.body.password,
     phone: req.body.phone,
     isAdmin: req.body.isAdmin,
     street: req.body.street,
@@ -96,6 +97,12 @@ router.post("/login", async (req, res) => {
   } else {
     res.status(400).send("password is wrong!");
   }
+  return res.status(200).send(user);
+  // if (user && bcrypt.compareSync(req.body.password, user.passwordHash)) {
+  //   res.status(200).send("user authenticated");
+  // } else {
+  //   res.status(400).send("password is wrong!");
+  // }
 });
 
 router.post("/register", async (req, res) => {
