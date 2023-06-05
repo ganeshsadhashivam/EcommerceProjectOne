@@ -11,12 +11,14 @@ app.options("*", cors());
 
 require("dotenv/config");
 const authJwt = require("./helper/jwt");
+const errorHandler = require("./helper/error-handler");
 const api = process.env.API_URL;
 
 //middleware
 app.use(bodyParser.json());
 app.use(morgan("tiny"));
-app.use(authJwt);
+app.use(authJwt());
+app.use(errorHandler);
 
 //Routes
 const categoryRoutes = require("./routes/categories");

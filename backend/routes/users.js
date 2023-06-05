@@ -97,7 +97,7 @@ router.post("/login", async (req, res) => {
   } else {
     res.status(400).send("password is wrong!");
   }
-  return res.status(200).send(user);
+  // return res.status(200).send(user);
   // if (user && bcrypt.compareSync(req.body.password, user.passwordHash)) {
   //   res.status(200).send("user authenticated");
   // } else {
@@ -144,8 +144,8 @@ router.delete("/:id", (req, res) => {
 });
 
 router.get(`/get/count`, async (req, res) => {
+  // const productList = await Product.find().select("name image");
   const userCount = await User.countDocuments((count) => count);
-
   if (!userCount) {
     res.status(500).json({ success: false });
   }
