@@ -1,0 +1,82 @@
+.header-icons {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(58, 25, 245);
+  /* background: black;
+  background: rgb(35, 35, 77);
+  background: linear-gradient(
+    180deg,
+    rgba(35, 35, 77, 1) 0%,
+    rgba(20, 1, 1, 1) 100%
+  ); */
+
+  padding: 0.1rem;
+  font-size: 30px;
+}
+
+.header-icons #logo {
+  margin-left: -10px;
+}
+
+.header-icons img {
+  width: 5rem;
+}
+
+.header-icons a {
+  text-decoration: none;
+}
+.header-icons span {
+  color: white;
+  position: absolute;
+  top: 1em;
+}
+/* .header-icons button {
+  /* display: flex;
+  flex-direction: row; 
+  margin-top: 2rem;
+  padding: 0;
+  width: 10%;
+  height: 5vh;
+} */
+
+.icons > li {
+  display: inline;
+  list-style-type: none;
+  padding: 1em;
+  font-size: 30px;
+}
+.icons {
+  color: white;
+}
+
+#cartitems-count {
+  /* top: 0em;
+  right: 0.4em;
+  background: white;
+  color: rgba(35, 35, 77, 1); */
+  /* width: 20px;
+  height: 40px;
+  border-radius: 50px;
+  padding: 0.5px;
+  height: 25px; */
+  /* width: 35px;
+  background: white;
+  border-radius: 50%;
+  /* color: rgba(35, 35, 77, 1); 
+  color: rgb(58, 25, 245);
+  position: absolute;
+  top: 0.1em;
+  right: 0.4em;
+  height: 35px; */
+
+  width: 35px;
+  background: white;
+  border-radius: 50%;
+  /* color: rgba(35, 35, 77, 1); */
+  color: rgb(58, 25, 245);
+  position: absolute;
+  top: 0.2em;
+  right: 6em;
+  height: 35px;
+  text-align: center;
+}

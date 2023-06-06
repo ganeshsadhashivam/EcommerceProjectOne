@@ -1,0 +1,8 @@
+.searchbar input {
+  width: 30rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  margin-top: 1.5rem;
+  margin-left: 10rem;
+}
